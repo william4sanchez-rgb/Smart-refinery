@@ -3,21 +3,40 @@ import { Mail, Phone, MapPin, Send, Globe } from 'lucide-react';
 
 export default function Contact() {
   return (
-    <div className="pt-32 pb-20 px-6 bg-neutral-50 min-h-screen">
-       <div className="max-w-7xl mx-auto">
+    <div className="bg-neutral-50 min-h-screen">
+      <header className="relative pt-48 pb-32 px-6 overflow-hidden bg-slate-900">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=2000" 
+            className="w-full h-full object-cover opacity-40 transition-all duration-1000"
+            alt="Contact Us"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
+            >
+               <span className="text-amber-400 font-mono text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Get in Touch</span>
+               <h1 className="font-display font-black text-6xl md:text-8xl tracking-tighter uppercase italic leading-none mb-8 text-white">
+                 Direct <br />
+                 <span className="gradient-text">Channels</span>
+               </h1>
+               <p className="text-slate-300 text-lg font-medium leading-relaxed mb-4 max-w-lg">
+                 Have a wholesale inquiry or partnership proposal? Our strategic communications team is responsive across all industrial sectors.
+               </p>
+            </motion.div>
+        </div>
+      </header>
+
+      <div className="max-w-7xl mx-auto py-24 px-6">
          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
             <motion.div
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
             >
-               <span className="text-teal-600 font-mono text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Get in Touch</span>
-               <h1 className="font-display font-black text-6xl md:text-8xl tracking-tighter uppercase italic leading-none mb-8 text-slate-900">
-                 Direct <br />
-                 <span className="gradient-text">Channels</span>
-               </h1>
-               <p className="text-slate-500 text-lg font-medium leading-relaxed mb-12 max-w-lg">
-                 Have a wholesale inquiry or partnership proposal? Our strategic communications team is responsive across all industrial sectors.
-               </p>
 
                <div className="space-y-8">
                   <div className="flex gap-6 group cursor-default">

@@ -11,21 +11,40 @@ export default function About() {
   ];
 
   return (
-    <div className="pt-32 pb-20 px-6 bg-neutral-50 min-h-screen">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-neutral-50 min-h-screen">
+      <header className="relative pt-48 pb-32 px-6 overflow-hidden bg-slate-900">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1542337316-df1ec36940af?auto=format&fit=crop&q=80&w=2000" 
+            className="w-full h-full object-cover opacity-40 transition-all duration-1000"
+            alt="About Smart Refinery"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent" />
+        </div>
+
+        <div className="relative z-10 max-w-7xl mx-auto">
+          <motion.div
+             initial={{ opacity: 0, x: -30 }}
+             animate={{ opacity: 1, x: 0 }}
+          >
+            <span className="text-teal-400 font-mono text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Corporate Ethos</span>
+            <h1 className="font-display font-black text-6xl md:text-8xl tracking-tighter uppercase italic leading-none mb-8 text-white">
+              Driven by <br />
+              <span className="gradient-text">Values</span>
+            </h1>
+            <p className="text-slate-300 text-lg md:text-xl font-medium leading-relaxed mb-6 max-w-2xl">
+              Smart Refinery Kazakhstan was founded on the principle that industrial power and environmental responsibility can coexist. We operate one of the most technologically advanced refineries in the region.
+            </p>
+          </motion.div>
+        </div>
+      </header>
+
+      <div className="max-w-7xl mx-auto py-24 px-6">
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-20 mb-32 items-center">
            <motion.div
              initial={{ opacity: 0, x: -30 }}
              animate={{ opacity: 1, x: 0 }}
            >
-              <span className="text-teal-600 font-mono text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Corporate Ethos</span>
-              <h1 className="font-display font-black text-6xl md:text-8xl tracking-tighter uppercase italic leading-none mb-8 text-slate-900">
-                Driven by <br />
-                <span className="gradient-text">Values</span>
-              </h1>
-              <p className="text-slate-500 text-lg md:text-xl font-medium leading-relaxed mb-6">
-                Smart Refinery Kazakhstan was founded on the principle that industrial power and environmental responsibility can coexist. We operate one of the most technologically advanced refineries in the region.
-              </p>
               <div className="h-px bg-slate-200 w-full mb-10" />
               <div className="flex flex-wrap gap-12">
                  <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm flex-1 min-w-[150px]">

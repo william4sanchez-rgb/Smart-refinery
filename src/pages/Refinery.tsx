@@ -11,24 +11,35 @@ export default function Refinery() {
   ];
 
   return (
-    <div className="pt-32 pb-20 px-6 bg-neutral-50 min-h-screen">
-      <div className="max-w-7xl mx-auto">
-        <header className="mb-20">
+    <div className="bg-neutral-50 min-h-screen">
+      <header className="relative pt-48 pb-32 px-6 overflow-hidden bg-slate-900">
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2000" 
+            className="w-full h-full object-cover opacity-40 transition-all duration-1000"
+            alt="Refinery Infrastructure"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent" />
+        </div>
+        
+        <div className="relative z-10 max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <span className="text-blue-600 font-mono text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Refined Technology</span>
-            <h1 className="font-display font-black text-6xl md:text-8xl tracking-tighter uppercase italic leading-none mb-8 text-slate-900">
+            <span className="text-amber-400 font-mono text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Refined Technology</span>
+            <h1 className="font-display font-black text-6xl md:text-8xl tracking-tighter uppercase italic leading-none mb-8 text-white">
               Industrial <br />
               <span className="gradient-text">Excellence</span>
             </h1>
-            <p className="text-slate-500 text-xl max-w-2xl font-light leading-relaxed">
+            <p className="text-slate-300 text-xl max-w-2xl font-medium leading-relaxed">
               Our facility integrates the latest vertical refining technologies, reducing operational footprint while maximizing high-value yield and environmental safety.
             </p>
           </motion.div>
-        </header>
+        </div>
+      </header>
 
+      <div className="max-w-7xl mx-auto py-24 px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
           {units.map((unit, i) => (
             <motion.div
