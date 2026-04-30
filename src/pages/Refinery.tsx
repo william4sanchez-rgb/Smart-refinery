@@ -1,8 +1,16 @@
 import { motion } from 'motion/react';
-import { Settings, Cpu, Wind, Droplets } from 'lucide-react';
+import { Settings, Cpu, Wind, Droplets, Factory, Database, Filter, Gauge, Zap } from 'lucide-react';
 import { cn } from '../lib/utils';
+import InteractiveUnitDiagram, { DiagramStage } from '../components/InteractiveUnitDiagram';
 
 export default function Refinery() {
+  const refineryStages: DiagramStage[] = [
+    { id: 'desalting', title: 'Desalting', description: 'Removal of salt, water, and suspended solids from crude oil before it enters the distillation units to prevent corrosion.', icon: Droplets, color: 'blue' },
+    { id: 'distillation', title: 'Distillation', description: 'Fractionation of crude oil into different boiling point ranges, producing light gases, naphtha, kerosene, and diesel.', icon: Filter, color: 'emerald' },
+    { id: 'cracking', title: 'Cracking', description: 'Breaking down heavy hydrocarbon molecules into lighter, higher-value products like gasoline and jet fuel.', icon: Zap, color: 'amber' },
+    { id: 'reforming', title: 'Reforming', description: 'Final molecular restructuring to boost octane levels and purity before final product blending.', icon: Settings, color: 'indigo' },
+  ];
+
   const units = [
     { title: 'ATU-1', label: 'Atmospheric Distillation', desc: 'Primary separation of crude oil into fractions by boiling range.', color: 'text-blue-600', bg: 'bg-blue-50' },
     { title: 'VDU-2', label: 'Vacuum Distillation', desc: 'Processing heavy residuals under reduced pressure for bitumen production.', color: 'text-teal-600', bg: 'bg-teal-50' },
@@ -40,6 +48,16 @@ export default function Refinery() {
       </header>
 
       <div className="max-w-7xl mx-auto py-24 px-6">
+        <div className="mb-32">
+          <div className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-display font-black text-slate-900 uppercase italic tracking-tighter mb-4">
+              Operational <br /> <span className="text-blue-600">Flow Map</span>
+            </h2>
+            <p className="text-slate-500 font-medium max-w-xl">Interactive breakdown of the core refining sequence at SmartRefinery Kazakhstan.</p>
+          </div>
+          <InteractiveUnitDiagram stages={refineryStages} unitName="Central Refinery Complex" />
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-32">
           {units.map((unit, i) => (
             <motion.div
@@ -57,7 +75,11 @@ export default function Refinery() {
                 </div>
               </div>
               <h3 className="text-2xl font-black uppercase tracking-tight mb-4 text-slate-900">{unit.label}</h3>
-              <p className="text-slate-500 leading-relaxed font-medium">{unit.desc}</p>
+              <p className="text-slate-500 leading-relaxed font-medium mb-8">{unit.desc}</p>
+              <div className="flex gap-4">
+                 <div className="bg-slate-50 px-4 py-2 rounded-lg border border-slate-100 text-[9px] font-bold uppercase tracking-[0.2em] text-slate-400">Pressure: 45 BAR</div>
+                 <div className="bg-slate-50 px-4 py-2 rounded-lg border border-slate-100 text-[9px] font-bold uppercase tracking-[0.2em] text-slate-400">Temp: 320°C</div>
+              </div>
             </motion.div>
           ))}
         </div>

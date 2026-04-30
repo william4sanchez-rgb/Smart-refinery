@@ -47,17 +47,20 @@ export default function About() {
            >
               <div className="h-px bg-slate-200 w-full mb-10" />
               <div className="flex flex-wrap gap-12">
-                 <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm flex-1 min-w-[150px]">
+                 <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm flex-1 min-w-[200px] group transition-all hover:shadow-xl hover:shadow-blue-500/5">
                     <span className="text-4xl font-display font-black tracking-tight block text-blue-600">2012</span>
-                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Year Founded</span>
+                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-widest block mb-4">Year Founded</span>
+                    <p className="text-slate-500 text-xs font-medium leading-relaxed">Originating as a strategic energy initiative in Almaty region.</p>
                  </div>
-                 <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm flex-1 min-w-[150px]">
+                 <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm flex-1 min-w-[200px] group transition-all hover:shadow-xl hover:shadow-teal-500/5">
                     <span className="text-4xl font-display font-black tracking-tight block text-teal-600">450+</span>
-                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Specialists</span>
+                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-widest block mb-4">Specialists</span>
+                    <p className="text-slate-500 text-xs font-medium leading-relaxed">Top-tier industrial engineers and technical staff.</p>
                  </div>
-                 <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm flex-1 min-w-[150px]">
+                 <div className="bg-white p-6 rounded-[32px] border border-slate-100 shadow-sm flex-1 min-w-[200px] group transition-all hover:shadow-xl hover:shadow-amber-500/5">
                     <span className="text-4xl font-display font-black tracking-tight block text-amber-600">09</span>
-                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-widest">Regions Served</span>
+                    <span className="text-slate-400 text-[10px] font-bold uppercase tracking-widest block mb-4">Regions Served</span>
+                    <p className="text-slate-500 text-xs font-medium leading-relaxed">Supplying critical energy to major Kazakhstan hubs.</p>
                  </div>
               </div>
            </motion.div>
