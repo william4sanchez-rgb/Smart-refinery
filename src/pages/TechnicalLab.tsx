@@ -7,8 +7,8 @@ export default function TechnicalLab() {
       <header className="relative pt-48 pb-32 px-6 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1579152276503-31581deccc92?auto=format&fit=crop&q=80&w=2000" 
-            className="w-full h-full object-cover opacity-40 transition-all duration-1000 grayscale"
+            src="https://lh3.googleusercontent.com/d/17sOIS4fJHM1CLuytCBzP0eZL6ubR8Nn-" 
+            className="w-full h-full object-cover opacity-40 transition-all duration-1000"
             alt="Technical Lab"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent" />

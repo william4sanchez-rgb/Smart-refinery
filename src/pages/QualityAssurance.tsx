@@ -7,7 +7,7 @@ export default function QualityAssurance() {
       <header className="relative pt-48 pb-32 px-6 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1581094288338-2314dddb7e8a?auto=format&fit=crop&q=80&w=2000" 
+            src="https://lh3.googleusercontent.com/d/16Fbcf0jZVjbZ1UGCp3RdSJFUqLzVuDE-" 
             className="w-full h-full object-cover opacity-40 transition-all duration-1000"
             alt="Quality Assurance"
           />
@@ -55,6 +55,14 @@ export default function QualityAssurance() {
          </div>
          
          <div className="mt-32 p-12 md:p-24 bg-slate-900 rounded-[64px] shadow-2xl relative overflow-hidden">
+            <div className="absolute inset-0 z-0">
+               <img 
+                 src="https://lh3.googleusercontent.com/d/1aeXdnSMDKBcvJC7OWH5mF1HOpvGp0Zvh" 
+                 className="w-full h-full object-cover opacity-30"
+                 alt="Certified Traceability"
+               />
+               <div className="absolute inset-0 bg-slate-900/80" />
+            </div>
             <div className="relative z-10 max-w-2xl">
                <h2 className="text-4xl md:text-6xl font-display font-black text-white uppercase italic tracking-tighter mb-8 leading-[0.9]">
                  Certified Batch <br /> <span className="text-blue-600">Traceability</span>

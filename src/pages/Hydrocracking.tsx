@@ -14,8 +14,8 @@ export default function Hydrocracking() {
       <header className="relative pt-48 pb-32 px-6 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&q=80&w=2000" 
-            className="w-full h-full object-cover opacity-40 transition-all duration-1000 grayscale"
+            src="https://s.hdnux.com/photos/62/33/60/13220875/26/rawImage.jpg" 
+            className="w-full h-full object-cover opacity-40 transition-all duration-1000"
             alt="Hydrocracking Unit"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent" />

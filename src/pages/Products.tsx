@@ -194,6 +194,14 @@ export default function Products() {
 
         {/* Global Logistics Section */}
         <section className="bg-slate-900 rounded-[64px] p-12 md:p-24 relative overflow-hidden shadow-2xl">
+          <div className="absolute inset-0 z-0">
+             <img 
+               src="https://lh3.googleusercontent.com/d/1b2U0FfDRD-Kv1Y3IpnWo34o3SIChGtr2" 
+               className="w-full h-full object-cover opacity-30"
+               alt="Strategic Reserves"
+             />
+             <div className="absolute inset-0 bg-slate-900/80" />
+          </div>
           <div className="absolute top-0 right-0 p-24 opacity-5 pointer-events-none">
             <Truck className="w-96 h-96 text-white" />
           </div>

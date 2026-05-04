@@ -7,10 +7,10 @@ export default function Hero() {
     <section className="relative h-screen flex items-center pt-20 overflow-hidden bg-slate-900">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1542337316-df1ec36940af?auto=format&fit=crop&q=80&w=2000"
-          alt="Smart Refinery Kazakhstan"
-          className="w-full h-full object-cover opacity-50 transition-all duration-1000 scale-105"
+        <img 
+          src="https://lh3.googleusercontent.com/d/14IikqofkdAUwneJSja9lGyQdg2ogLi3Z" 
+          alt="Smart Refinery Kazakhstan" 
+          className="w-full h-full object-cover opacity-60 transition-all duration-1000 scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900/60 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-blue-500/20 via-teal-500/10 to-transparent opacity-70" />

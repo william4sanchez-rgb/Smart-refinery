@@ -7,8 +7,8 @@ export default function NetZero() {
       <header className="relative pt-48 pb-32 px-6 overflow-hidden bg-slate-900">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1466611653911-95282fc3656b?auto=format&fit=crop&q=80&w=2000" 
-            className="w-full h-full object-cover opacity-40 transition-all duration-1000 grayscale"
+            src="https://images.squarespace-cdn.com/content/v1/5af5c9063e2d0944620f29b3/1584288639205-CRXAW10VDDE803MX7F3B/Gas-oil+Hydrotreater.jpg" 
+            className="w-full h-full object-cover opacity-40 transition-all duration-1000"
             alt="Net Zero Roadmap"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-900/60 to-transparent" />

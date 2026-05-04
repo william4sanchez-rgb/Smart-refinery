@@ -73,7 +73,7 @@ export default function Isomerization() {
            </div>
            <div className="relative">
               <div className="aspect-square bg-slate-200 rounded-[56px] overflow-hidden shadow-2xl border-8 border-white">
-                <img src="https://images.unsplash.com/photo-1542337316-df1ec36940af?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover" alt="Unit Hardware" />
+                <img src="https://www.sandiegouniontribune.com/wp-content/uploads/2025/07/SUT-L-Valero-Refinery.jpg?w=1800&resize=1800,1800" className="w-full h-full object-cover" alt="Valero Refinery Isomerization Unit" />
               </div>
               <div className="absolute -bottom-10 -right-10 bg-slate-900 p-8 rounded-[40px] shadow-2xl">
                  <Activity className="text-amber-500 w-10 h-10 mb-4" />

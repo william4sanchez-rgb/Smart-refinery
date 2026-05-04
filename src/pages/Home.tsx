@@ -51,7 +51,7 @@ export default function Home() {
           <div className="lg:w-1/2 relative">
              <div className="aspect-[4/3] rounded-[48px] overflow-hidden shadow-2xl shadow-blue-900/10 border-8 border-white">
                 <img 
-                  src="https://images.unsplash.com/photo-1542337316-df1ec36940af?auto=format&fit=crop&q=80&w=1000" 
+                  src="https://lh3.googleusercontent.com/d/1qSlPHYxyu6jickatLIm7Vq7iau3NsuiF" 
                   alt="Industrial Facility"
                   className="w-full h-full object-cover"
                 />
